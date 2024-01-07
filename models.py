@@ -72,10 +72,10 @@ class Review(Base):
     def full_review(self):
         return f"Review for {self.restaurant().name} by {self.customer().full_name()}: {self.star_rating} stars."
 
-# Create an engine and bind it to the Base class
+
 engine = create_engine('sqlite:///restaurant_reviews.db')
 Base.metadata.create_all(engine)
 
-# Create a session
+
 Session = sessionmaker(bind=engine)
 session = Session()

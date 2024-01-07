@@ -1,4 +1,3 @@
-# 20220107_initial_tables.py
 from alembic import op
 import sqlalchemy as sa
 
